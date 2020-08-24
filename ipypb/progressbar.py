@@ -70,7 +70,7 @@ def progressbar_factory(*args, **kwargs):
     desc = kwargs.pop('desc', None)
     leave = kwargs.pop('leave', None)
     if desc is not None:
-        kwargs['label'] = desc
+        kwargs['label'] = str(desc)
     if leave is not None:
         kwargs['keep'] = leave
 
